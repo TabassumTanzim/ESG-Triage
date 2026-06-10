@@ -1,0 +1,174 @@
+{
+  "experiment": "BUS5001_A3_Q3_ESG_Message_Triage",
+  "model_used": "gemini-2.5-flash",
+  "baseline_models": [
+    "distilbert-base-uncased-finetuned-sst-2-english",
+    "TextBlob"
+  ],
+  "gemini_results": [
+    {
+      "message": "There is a water leak in Building C that has been running all morning.",
+      "classification": {
+        "issue_category": "WATER",
+        "urgency": "HIGH",
+        "sentiment": "NEUTRAL",
+        "followup_required": "Y",
+        "recommended_team": "facilities",
+        "escalation_reason": "Ongoing water waste and potential property damage.",
+        "data_sensitivity_risk": "LOW",
+        "brief_summary": "An ongoing water leak has been reported in Building C since the morning."
+      }
+    },
+    {
+      "message": "The recycling bins are contaminated again and no one seems to be checking them.",
+      "classification": {
+        "issue_category": "WASTE",
+        "urgency": "MEDIUM",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "recommended_team": "facilities",
+        "escalation_reason": null,
+        "data_sensitivity_risk": "LOW",
+        "brief_summary": "An employee reports recurring contamination of recycling bins and a perceived lack of regular checks."
+      }
+    },
+    {
+      "message": "The air conditioning is running overnight in an empty office.",
+      "classification": {
+        "issue_category": "ENERGY",
+        "urgency": "HIGH",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "recommended_team": "facilities",
+        "escalation_reason": "Significant ongoing energy waste in an empty office.",
+        "data_sensitivity_risk": "LOW",
+        "brief_summary": "Employee reports air conditioning is running overnight in an empty office, indicating energy waste."
+      }
+    },
+    {
+      "message": "I want to report that one of our suppliers may not meet our sustainability policy.",
+      "classification": {
+        "issue_category": "SUPPLIER",
+        "urgency": "HIGH",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "recommended_team": "procurement",
+        "escalation_reason": "Potential reputational and compliance risks associated with supplier non-adherence to sustainability policy.",
+        "data_sensitivity_risk": "MEDIUM",
+        "brief_summary": "An employee reported a potential non-compliance of a supplier with the company's sustainability policy."
+      }
+    },
+    {
+      "message": "The accessible entrance near the main building has been blocked for two days.",
+      "classification": {
+        "issue_category": "ACCESSIBILITY",
+        "urgency": "HIGH",
+        "sentiment": "NEUTRAL",
+        "followup_required": "Y",
+        "recommended_team": "facilities",
+        "escalation_reason": "Accessible entrance blocked for two days creating significant access barriers and potential compliance issues.",
+        "data_sensitivity_risk": "LOW",
+        "brief_summary": "An accessible entrance near the main building has been blocked for two days."
+      }
+    }
+  ],
+  "huggingface_results": [
+    {
+      "message": "There is a water leak in Building C that has been running all morning.",
+      "classification": {
+        "issue_category": "WATER",
+        "urgency": "HIGH",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "confidence_score": 0.998
+      }
+    },
+    {
+      "message": "The recycling bins are contaminated again and no one seems to be checking them.",
+      "classification": {
+        "issue_category": "WASTE",
+        "urgency": "HIGH",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "confidence_score": 0.9996
+      }
+    },
+    {
+      "message": "The air conditioning is running overnight in an empty office.",
+      "classification": {
+        "issue_category": "ENERGY",
+        "urgency": "HIGH",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "confidence_score": 0.9995
+      }
+    },
+    {
+      "message": "I want to report that one of our suppliers may not meet our sustainability policy.",
+      "classification": {
+        "issue_category": "SUPPLIER",
+        "urgency": "HIGH",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "confidence_score": 0.9997
+      }
+    },
+    {
+      "message": "The accessible entrance near the main building has been blocked for two days.",
+      "classification": {
+        "issue_category": "ENERGY",
+        "urgency": "HIGH",
+        "sentiment": "NEGATIVE",
+        "followup_required": "Y",
+        "confidence_score": 0.999
+      }
+    }
+  ],
+  "textblob_results": [
+    {
+      "message": "There is a water leak in Building C that has been running all morning.",
+      "classification": {
+        "issue_category": "WATER",
+        "sentiment": "NEUTRAL",
+        "followup_required": "N",
+        "polarity_score": 0.0
+      }
+    },
+    {
+      "message": "The recycling bins are contaminated again and no one seems to be checking them.",
+      "classification": {
+        "issue_category": "WASTE",
+        "sentiment": "NEUTRAL",
+        "followup_required": "N",
+        "polarity_score": 0.0
+      }
+    },
+    {
+      "message": "The air conditioning is running overnight in an empty office.",
+      "classification": {
+        "issue_category": "ENERGY",
+        "sentiment": "NEUTRAL",
+        "followup_required": "N",
+        "polarity_score": -0.1
+      }
+    },
+    {
+      "message": "I want to report that one of our suppliers may not meet our sustainability policy.",
+      "classification": {
+        "issue_category": "SUPPLIER",
+        "sentiment": "NEUTRAL",
+        "followup_required": "N",
+        "polarity_score": 0.0
+      }
+    },
+    {
+      "message": "The accessible entrance near the main building has been blocked for two days.",
+      "classification": {
+        "issue_category": "ENERGY",
+        "sentiment": "POSITIVE",
+        "followup_required": "N",
+        "polarity_score": 0.2139
+      }
+    }
+  ]
+}
