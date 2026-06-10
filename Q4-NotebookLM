@@ -1,12 +1,46 @@
-Australian Government. (1988). Privacy Act 1988 (Cth). 
-https://www.legislation.gov.au/Details/C2021C00452
+# Q4: NotebookLM Evaluation - Experiment Log
+## BUS5001 Assessment 3 - Tabassum Tanzim Nawar
 
-Department of Industry, Science and Resources. (2024). 
-Australia's AI Ethics Principles. 
-https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-framework
+## Notebook Title
+ESG Reporting Standards Briefing
 
-W3C. (2018). Web Content Accessibility Guidelines (WCAG) 2.1. 
-https://www.w3.org/TR/WCAG21/
+## Scenario
+Preparing a student briefing on ESG reporting standards 
+for a governance and compliance workshop.
 
-TCFD. (2023). Task Force on Climate-related Financial Disclosures. 
-https://www.fsb-tcfd.org
+## Sources Used
+1. GRI - How to use the GRI Standards
+   URL: https://www.globalreporting.org/how-to-use-the-gri-standards/
+
+2. IFRS - International Sustainability Standards Board (ISSB)
+   URL: https://www.ifrs.org/groups/international-sustainability-standards-board/
+
+3. Climate Change - United Nations
+   URL: https://www.un.org/en/climatechange
+
+## Features Evaluated
+1. Conversational Q&A with source citations
+2. Audio Overview
+3. Mind Map
+4. Quiz
+
+## Queries Used for Q&A Testing
+Query 1: What are the key principles of ESG reporting 
+standards and why are they important for organisations?
+
+Query 2: How should an organisation measure and report 
+on its carbon emissions under current ESG frameworks?
+
+## Key Observations
+- All three sources loaded successfully
+- Q&A responses included numbered source citations
+- Audio Overview generated a conversational dialogue 
+  summarising all three sources
+- Mind Map organised ESG concepts into a visual hierarchy
+- Quiz generated questions based on source content
+- Responses grounded in uploaded sources rather than 
+  general knowledge
+
+## Screenshots
+Screenshots of all features are included in the 
+assessment report.
